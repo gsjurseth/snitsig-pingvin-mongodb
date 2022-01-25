@@ -17,6 +17,6 @@ mongo  --eval \
  'db.createUser( { user: "mongoadmin", pwd: "Il1k3Traf!k", roles: [ { role: "userAdminAnyDatabase", db: "admin" } ] })' admin
 
 mongo -u mongoadmin -p 'Il1k3Traf!k' --eval \
-  'db.createUser( { user: "appity", pwd: "apppwd", roles:[ { role: "readWrite" , db:"appdb" } ] })' \
+  'db.createUser( { user: "appuser", pwd: "apppwd", roles:[ { role: "readWrite" , db:"appdb" } ] })' \
   admin
 
